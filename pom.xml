@@ -52,7 +52,7 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.4.11</version>
 				<configuration>
-					<imageName>prasenjit-net/${project.artifactId}</imageName>
+					<imageName>prasenjitnet/${project.artifactId}</imageName>
 					<!--<dockerDirectory>src/main/docker</dockerDirectory>-->
                     <baseImage>openjdk</baseImage>
                     <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
