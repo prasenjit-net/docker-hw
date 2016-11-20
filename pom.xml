@@ -53,8 +53,11 @@
                 <version>0.4.11</version>
                 <configuration>
                     <imageName>prasenjitnet/${project.artifactId}</imageName>
-                    <dockerDirectory>src/main/docker</dockerDirectory>
+                    <!--<dockerDirectory>src/main/docker</dockerDirectory>-->
                     <baseImage>openjdk</baseImage>
+                    <volumes>
+                        <volume>/tmp</volume>
+                    </volumes>
                     <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
                     <resources>
                         <resource>
