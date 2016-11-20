@@ -58,6 +58,7 @@
                     <volumes>
                         <volume>/tmp</volume>
                     </volumes>
+                    <exposes>8080</exposes>
                     <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
                     <resources>
                         <resource>
